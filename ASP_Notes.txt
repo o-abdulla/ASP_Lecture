@@ -1,0 +1,57 @@
+new page
+
+1
+Views -> Home (can be any)
+right click the folder
+add -> view
+Razor view empty
+name the file
+
+2
+Go back to home controller
+Make a new action (method)
+(copy an existing one)
+Name the action after the view name
+-Case senstive
+
+3
+create a way to access
+header
+1 views -> shared -> _Layout.cshtml
+2 add a new LI element by copying and pasting
+3 Adjust values as needed
+
+
+implement whatever you need on the page
+--------------------------------------------
+
+Forms
+
+Make form element
+add asp-method="post"
+add asp-action=""
+-put the result action in the ""
+Describe each input
+add inputs in the form
+-name = Variable name
+Add an submit input
+
+go to the controller
+go to your result action
+in the parameters, add the form inputs as c# variables
+
+--Without OOP
+save the values in viewdatas
+head to view and display them
+
+--with OOP
+Create a class in models folder
+NO CONSTRUCTOR
+Head back to controller
+in parameters of result action, use the new class
+pass that object into the view
+Head into result view
+Put @model ClassName
+(@model Cat)
+to use value, use @Model
+You have access to properties and methods built into it

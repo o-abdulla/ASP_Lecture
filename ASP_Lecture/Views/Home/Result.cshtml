@@ -1,0 +1,24 @@
+﻿@model Cat
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@*<h1>Cat Name: @ViewData["CatName"]</h1>    <--  another way to comment using razor
+<p>Cat Age: @ViewData["CatAge"]</p>*@
+
+<h1>Cat Name: @Model.CatName</h1>
+<p>Cat Age: @Model.CatAge</p>
+
+@{
+    if (Model.Fixed)
+    {
+        <p>This cat is fixed!</p>
+    }
+    else
+    {
+        <p>This cat is not fixed!</p>
+    }
+}
